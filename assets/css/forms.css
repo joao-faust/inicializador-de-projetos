@@ -1,0 +1,84 @@
+/* FORMS CSS */
+
+input:not(input[type="file"]),
+textarea {
+  background-color: var(--input-bg-color);
+  border:
+    var(--main-border-width)
+    var(--main-border-style)
+    var(--input-border-color)
+  ;
+  color: var(--main-text-color);
+  border-radius: var(--main-border-radius);
+  padding: 0 10px;
+}
+
+input:not(input[type="file"]) {
+  height: 40px;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: var(--btn-bg-color);
+  border:
+    var(--main-border-width)
+    var(--main-border-style)
+    var(--btn-border-color)
+  ;
+  cursor: pointer;
+  transition: all .5s;
+  border-radius: var(--main-border-radius);
+}
+
+button:hover {
+  background-color: var(--btn-border-color);
+  border-color: var(--btn-bg-color);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.back-btn {
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-btn {
+  padding: 10px 20px;
+}
+
+/* SEARCH FORM */
+#searchForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+#search {
+  height: 35px;
+  max-width: 280px;
+}
+
+#makeSearch {
+  height: 35px;
+  width: 40px;
+  margin-left: 10px;
+}

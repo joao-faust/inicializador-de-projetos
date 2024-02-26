@@ -1,0 +1,17 @@
+/* MESSAGE CSS */
+
+.message {
+  max-width: 860px;
+  margin: auto;
+  margin-bottom: 35px;
+  padding: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--main-border-radius);
+}
+
+.error {
+  background-color: var(--error-message-bg-color);
+  color: var(--error-message-color);
+  border-color: var(--error-message-border-color);
+}

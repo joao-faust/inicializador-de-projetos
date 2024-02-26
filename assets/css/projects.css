@@ -1,0 +1,22 @@
+/* PROJECTS CSS */
+
+/* PROJECTS TABLE */
+.projects-table {
+  width: 100%;
+}
+
+.projects-table, th, td {
+  border-collapse: collapse; /* define a separação entre as bordar */
+  padding: 10px;
+  text-align: left;
+}
+
+/* EVEN = Par */
+.projects-table tr:nth-child(even) {
+  background-color: var(--products-table-cell-bg-color-1);
+}
+
+/* ODD = Ímpar */
+.projects-table tr:nth-child(odd):not(:first-child) {
+  background-color: var(--products-table-cell-bg-color-2);
+}

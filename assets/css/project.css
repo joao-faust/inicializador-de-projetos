@@ -1,0 +1,9 @@
+/* PROJECT CSS */
+
+.project-container > p {
+  margin-bottom: 20px;
+}
+
+.project-container > p strong {
+  text-transform: uppercase;
+}

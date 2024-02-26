@@ -1,0 +1,25 @@
+/* COLORS CSS */
+
+.success {
+  color: var(--text-success);
+}
+
+.primary-1 {
+  color: var(--text-primary-1);
+}
+
+.primary-2 {
+  color: var(--text-primary-2);
+}
+
+.warning {
+  color: var(--text-warning);
+}
+
+.danger {
+  color: var(--text-danger);
+}
+
+.secondary {
+  color: var(--text-secondary);
+}

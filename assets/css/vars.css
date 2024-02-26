@@ -1,0 +1,40 @@
+:root {
+  /* FONTS */
+  --main-font: Arial, sans-serif;
+
+  /* COLORS */
+
+  /* OTHER COLORS */
+  --main-bg-color: #37474f;
+  --header-bg-color: #263238;
+
+  --main-text-color: #CCC;
+  --text-success: #4caf50;
+  --text-primary-1: #2196f3;
+  --text-primary-2: #01579b;
+  --text-warning: orange;
+  --text-danger: #f44336;
+  --text-secondary: #bdbdbd;
+
+  --btn-bg-color: #ffb74d;
+  --btn-border-color: #ff9800;
+
+  --input-bg-color: #1c272c;
+  --input-border-color: #0b0f11;
+
+  --error-message-bg-color: #f8d7da;
+  --error-message-color: #58151c;
+  --error-message-border-color: #f1aeb5;
+
+  --products-table-cell-bg-color-1: #192125;
+  --products-table-cell-bg-color-2: #263238;
+
+  /* BORDERS */
+  --main-border-radius: 3px;
+  --main-border-width: 1px;
+  --main-border-style: solid;
+
+  --header-border: var(--main-border-width) var(--main-border-style) #192125;
+
+  --hr-border: var(--main-border-width) var(--main-border-style) #0f1416;
+}

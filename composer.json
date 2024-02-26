@@ -1,0 +1,16 @@
+{
+  "name": "joao/project-starter",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "João Faust"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  }
+}
