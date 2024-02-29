@@ -2,7 +2,7 @@
 
 use app\daos\SettingDao;
 
-require_once('partials/_views.php');
+require_once('partials/_initPage.php');
 
 $title = 'Cadastrar projeto';
 
@@ -10,13 +10,9 @@ $assetsList = [
   // SETTINGS CSS
   '<link rel="stylesheet" href="'.$baseUrl.'assets/css/settings.css">'
 ];
-?>
 
-<?php
 require_once('partials/_header.php');
-?>
 
-<?php
 $settingDao = new SettingDao();
 $setting = $settingDao->get();
 ?>

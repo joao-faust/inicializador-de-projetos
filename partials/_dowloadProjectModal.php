@@ -31,7 +31,7 @@ use app\services\Icons;
 <script>
   // SET THE CURRENT PROJECT ID IN THE #_projectId WITHIN THE #downloadProjectModal
   (() => {
-    const downloadProjectBtn = document.querySelectorAll('.download-project-btn');
+    const downloadProjectBtn = document.querySelectorAll('[data-id="downloadProjectBtn"]');
     downloadProjectBtn.forEach((el) => {
       el.addEventListener('click', (e) => {
         const projectId = e.currentTarget.id;

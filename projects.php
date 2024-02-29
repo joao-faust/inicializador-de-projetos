@@ -1,10 +1,9 @@
 <?php
-
 use app\daos\ProjectDao;
 use app\services\Icons;
 use app\services\MyString;
 
-require_once('partials/_views.php');
+require_once('partials/_initPage.php');
 
 $title = 'Projetos';
 
@@ -30,10 +29,12 @@ if ($search) {
   //ALL
   $projects = $projectDao->get();
 }
+
+require_once('partials/_header.php');
 ?>
 
 <?php
-require_once('partials/_header.php');
+
 ?>
 
 <main class="responsive-table">
@@ -60,8 +61,8 @@ require_once('partials/_header.php');
             </a>
           </td>
           <td title="Baixar projeto">
-            <a href="#" class="success download-project-btn" id="<?= $project->getId() ?>"
-            data-modal-target="downloadProjectModal">
+            <a href="#" class="success" id="<?= $project->getId() ?>"
+            data-modal-target="downloadProjectModal" data-id="downloadProjectBtn">
               <?= Icons::download() ?>
             </a>
           </td>

@@ -1,3 +1,9 @@
+<?php
+use app\services\Message;
+use app\services\Icons;
+
+$message = Message::get();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -20,8 +26,6 @@
   <!-- STYLES CSS -->
   <link rel="stylesheet" href="<?= $baseUrl ?>assets/css/styles.css">
   <?php
-  use app\services\Icons;
-
   if (isset($assetsList)) {
     echo implode('', $assetsList);
   }
@@ -49,6 +53,7 @@
           (() => {
             const searchForm = document.getElementById('searchForm');
 
+            // SUBMIT THE SEARCH FORM
             searchForm.addEventListener('submit', (e) => {
               e.preventDefault();
 

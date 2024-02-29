@@ -4,7 +4,7 @@ use app\daos\ProjectDao;
 use app\services\Icons;
 use app\services\MyString;
 
-require_once('partials/_views.php');
+require_once('partials/_initPage.php');
 
 $title = 'Editar projeto';
 
@@ -12,9 +12,7 @@ $assetsList = [
   // CREATE PROJECTS CSS
   '<link rel="stylesheet" href="'.$baseUrl.'assets/css/create_project.css">'
 ];
-?>
 
-<?php
 require_once('partials/_header.php');
 ?>
 

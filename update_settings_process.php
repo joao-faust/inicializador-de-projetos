@@ -3,7 +3,7 @@
 use app\daos\SettingDao;
 use app\models\Setting;
 
-require_once('partials/_process.php');
+require_once('partials/_initPage.php');
 
 $projectDestination = filter_input(
   INPUT_POST,

@@ -4,7 +4,7 @@ use app\daos\ProjectDao;
 use app\models\Project;
 use app\services\File;
 
-require_once('partials/_process.php');
+require_once('partials/_initPage.php');
 
 $projectId = filter_input(
   INPUT_GET,
@@ -58,6 +58,7 @@ if ($project = $projectDao->getById($projectId)) {
     $projectDao->updateZip($newProject);
   }
 
+  // REDIRECT
   header('Location:' . $baseUrl . 'projects.php');
   exit;
 }

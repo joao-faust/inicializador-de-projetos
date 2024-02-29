@@ -1,10 +1,9 @@
 <?php
-
 use app\daos\HistoryDao;
 use app\services\Icons;
 use app\services\MyString;
 
-require_once('partials/_views.php');
+require_once('partials/_initPage.php');
 
 $title = 'Cadastrar projeto';
 
@@ -12,12 +11,9 @@ $assetsList = [
   // CREATE PROJECTS CSS
   '<link rel="stylesheet" href="' . $baseUrl . 'assets/css/projects.css">'
 ];
-?>
-<?php
-require_once('partials/_header.php');
-?>
 
-<?php
+require_once('partials/_header.php');
+
 $historyDao = new HistoryDao();
 
 $recentProjects = $historyDao->get();

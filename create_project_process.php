@@ -1,9 +1,9 @@
 <?php
 
-require_once('partials/_process.php');
-
 use app\daos\ProjectDao;
 use app\models\Project;
+
+require_once('partials/_initPage.php');
 
 $title = filter_input(
   INPUT_POST,
@@ -36,4 +36,5 @@ $project->uploadZip($_FILES['zip']);
 // ADD PROJECT IN DATABASE
 $projectDao->create($project);
 
+// REDIRECT
 header('Location:' . $baseUrl);

@@ -3,7 +3,7 @@
 use app\daos\ProjectDao;
 use app\services\File;
 
-require_once('partials/_process.php');
+require_once('partials/_initPage.php');
 
 $projectId = filter_input(
   INPUT_GET,
@@ -21,6 +21,8 @@ if ($project = $projectDao->getById($projectId)) {
   if (File::destroy($path)) {
     // REMOVE FROM THE DATABASE
     $projectDao->delete($projectId);
+
+    // REDIRECT
     header('Location:' . $baseUrl . '/projects.php');
     exit;
   }

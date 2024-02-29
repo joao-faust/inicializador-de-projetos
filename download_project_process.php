@@ -7,7 +7,7 @@ use app\models\History;
 use app\models\Project;
 use app\services\OS;
 
-require_once('partials/_process.php');
+require_once('partials/_initPage.php');
 
 $projectId = filter_input(
   INPUT_POST,
